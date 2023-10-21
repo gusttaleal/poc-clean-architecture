@@ -1,30 +1,25 @@
 package org.poc.chain.of.responsibility.core.domain.valueobjects;
 
+import lombok.Builder;
+import lombok.Data;
 import org.poc.chain.of.responsibility.core.domain.exceptions.CPFException;
 
+import java.util.Objects;
+
+@Data
+@Builder
 public class CPF {
-    private final String cpf;
+    private String cpf;
 
-    public CPF(final String cpf) throws CPFException {
-        if (validate(cpf)) {
-            this.cpf = cpf;
-        } else {
+    public CPF(final String cpf) {
+        validate(cpf);
+        this.cpf = cpf;
+    }
+
+    private void validate(final String cpf) {
+        boolean isValid = !Objects.isNull(cpf) && cpf.matches(
+                "[0-9]{3}\\.[0-9]{3}\\.[0-9]{3}\\-[0-9]{2}");
+        if (!isValid)
             throw new CPFException("The CPF number is invalid. Try format on this way: 000.000.000-00");
-        }
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    private boolean validate(final String cpf) {
-        return cpf.matches("[0-9]{3}\\.?[0-9]{3}\\.?[0-9]{3}\\-?[0-9]{2}");
-    }
-
-    @Override
-    public String toString() {
-        return "CPF[" +
-                "cpf='" + cpf + '\'' +
-                ']';
     }
 }
