@@ -20,6 +20,7 @@ public class CPF {
         boolean isValid = !Objects.isNull(cpf) && cpf.matches(
                 "[0-9]{3}\\.[0-9]{3}\\.[0-9]{3}\\-[0-9]{2}");
         if (!isValid)
-            throw new CPFException("The CPF number is invalid. Try format on this way: 000.000.000-00");
+            throw new CPFException("The CPF number: [" + cpf + "] "
+                    + "is invalid. Try format on this way: [000.000.000-00]");
     }
 }
