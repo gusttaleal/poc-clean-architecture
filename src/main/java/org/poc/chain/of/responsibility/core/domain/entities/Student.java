@@ -14,4 +14,5 @@ public class Student {
     private final String fullName;
     private final Email email;
     private final LocalDate birthDate;
+    private String enrollment;
 }
