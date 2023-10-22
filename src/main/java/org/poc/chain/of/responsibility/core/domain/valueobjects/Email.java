@@ -2,7 +2,7 @@ package org.poc.chain.of.responsibility.core.domain.valueobjects;
 
 import lombok.Builder;
 import lombok.Data;
-import org.poc.chain.of.responsibility.core.domain.exceptions.InvalidEmail;
+import org.poc.chain.of.responsibility.core.exceptions.InvalidEmail;
 
 import java.util.Objects;
 

@@ -3,7 +3,7 @@ package org.poc.chain.of.responsibility.infra.service;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.poc.chain.of.responsibility.core.domain.exceptions.ErrorWhenCipherPassword;
+import org.poc.chain.of.responsibility.core.exceptions.ErrorWhenCipherPassword;
 import org.poc.chain.of.responsibility.core.domain.valueobjects.Password;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -1,9 +1,9 @@
-package org.poc.chain.of.responsibility.core.domain.usecases;
+package org.poc.chain.of.responsibility.core.usecases;
 
 import lombok.RequiredArgsConstructor;
 import org.poc.chain.of.responsibility.core.domain.entities.Student;
-import org.poc.chain.of.responsibility.core.domain.exceptions.ErrorWhenCipherPassword;
-import org.poc.chain.of.responsibility.core.domain.service.StudentCipher;
+import org.poc.chain.of.responsibility.core.exceptions.ErrorWhenCipherPassword;
+import org.poc.chain.of.responsibility.core.service.StudentCipher;
 import org.poc.chain.of.responsibility.core.domain.valueobjects.Password;
 
 import java.util.logging.Logger;

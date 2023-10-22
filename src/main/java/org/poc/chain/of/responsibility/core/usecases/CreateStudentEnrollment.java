@@ -1,4 +1,4 @@
-package org.poc.chain.of.responsibility.core.domain.usecases;
+package org.poc.chain.of.responsibility.core.usecases;
 
 import org.poc.chain.of.responsibility.core.domain.entities.Student;
 

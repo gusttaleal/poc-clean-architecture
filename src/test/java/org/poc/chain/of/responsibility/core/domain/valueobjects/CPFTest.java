@@ -2,7 +2,7 @@ package org.poc.chain.of.responsibility.core.domain.valueobjects;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.poc.chain.of.responsibility.core.domain.exceptions.InvalidCPF;
+import org.poc.chain.of.responsibility.core.exceptions.InvalidCPF;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;

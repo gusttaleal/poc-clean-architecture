@@ -2,7 +2,7 @@ package org.poc.chain.of.responsibility.core.domain.valueobjects;
 
 import lombok.Builder;
 import lombok.Data;
-import org.poc.chain.of.responsibility.core.domain.exceptions.InvalidCPF;
+import org.poc.chain.of.responsibility.core.exceptions.InvalidCPF;
 
 import java.util.Objects;
 

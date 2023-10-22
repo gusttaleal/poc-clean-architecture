@@ -1,8 +1,8 @@
-package org.poc.chain.of.responsibility.core.domain.usecases;
+package org.poc.chain.of.responsibility.core.usecases;
 
 import lombok.RequiredArgsConstructor;
 import org.poc.chain.of.responsibility.core.domain.entities.Student;
-import org.poc.chain.of.responsibility.core.domain.repositories.StudentRepository;
+import org.poc.chain.of.responsibility.core.repositories.StudentRepository;
 
 import java.util.logging.Logger;
 

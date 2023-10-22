@@ -1,7 +1,7 @@
 package org.poc.chain.of.responsibility.infra.service;
 
-import org.poc.chain.of.responsibility.core.domain.exceptions.ErrorWhenCipherPassword;
-import org.poc.chain.of.responsibility.core.domain.service.StudentCipher;
+import org.poc.chain.of.responsibility.core.exceptions.ErrorWhenCipherPassword;
+import org.poc.chain.of.responsibility.core.service.StudentCipher;
 import org.poc.chain.of.responsibility.core.domain.valueobjects.Password;
 
 import javax.crypto.Cipher;
