@@ -4,6 +4,7 @@ import lombok.Builder;
 import lombok.Data;
 import org.poc.chain.of.responsibility.core.domain.valueobjects.CPF;
 import org.poc.chain.of.responsibility.core.domain.valueobjects.Email;
+import org.poc.chain.of.responsibility.core.domain.valueobjects.Password;
 
 import java.time.LocalDate;
 
@@ -15,4 +16,5 @@ public class Student {
     private final Email email;
     private final LocalDate birthDate;
     private String enrollment;
+    private Password password;
 }
