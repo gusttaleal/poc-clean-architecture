@@ -2,7 +2,7 @@ package org.poc.chain.of.responsibility.core.domain.valueobjects;
 
 import lombok.Builder;
 import lombok.Data;
-import org.poc.chain.of.responsibility.core.domain.exceptions.CPFException;
+import org.poc.chain.of.responsibility.core.domain.exceptions.InvalidCPF;
 
 import java.util.Objects;
 
@@ -20,7 +20,7 @@ public class CPF {
         boolean isValid = !Objects.isNull(cpf) && cpf.matches(
                 "[0-9]{3}\\.[0-9]{3}\\.[0-9]{3}\\-[0-9]{2}");
         if (!isValid)
-            throw new CPFException("The CPF number: [" + cpf + "] "
+            throw new InvalidCPF("The CPF number: [" + cpf + "] "
                     + "is invalid. Try format on this way: [000.000.000-00].");
     }
 }

@@ -2,7 +2,7 @@ package org.poc.chain.of.responsibility.core.domain.valueobjects;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.poc.chain.of.responsibility.core.domain.exceptions.CPFException;
+import org.poc.chain.of.responsibility.core.domain.exceptions.InvalidCPF;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -21,7 +21,7 @@ class CPFTest {
     @Test
     @DisplayName("Should throws CPFException when CPF is invalid")
     void shouldThrowsCPFExceptionWhenCPFIsInvalid() {
-        assertThrows(CPFException.class, () -> CPF.builder().cpf(null).build());
-        assertThrows(CPFException.class, () -> CPF.builder().cpf("").build());
+        assertThrows(InvalidCPF.class, () -> CPF.builder().cpf(null).build());
+        assertThrows(InvalidCPF.class, () -> CPF.builder().cpf("").build());
     }
 }

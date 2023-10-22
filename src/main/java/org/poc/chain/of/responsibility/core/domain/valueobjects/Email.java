@@ -2,7 +2,7 @@ package org.poc.chain.of.responsibility.core.domain.valueobjects;
 
 import lombok.Builder;
 import lombok.Data;
-import org.poc.chain.of.responsibility.core.domain.exceptions.EmailException;
+import org.poc.chain.of.responsibility.core.domain.exceptions.InvalidEmail;
 
 import java.util.Objects;
 
@@ -21,6 +21,6 @@ public class Email {
                 "^(?=.{1,64}@)[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-]+)*"
                         + "@[^-][A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z]{2,})$");
         if (!isValid)
-            throw new EmailException("The e-mail address: [" + email + "] is not valid.");
+            throw new InvalidEmail("The e-mail address: [" + email + "] is not valid.");
     }
 }
