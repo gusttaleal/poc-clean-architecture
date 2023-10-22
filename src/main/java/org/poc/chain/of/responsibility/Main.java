@@ -37,7 +37,7 @@ public class Main {
                 .email(Email.builder().email("gustavo@email.com").build())
                 .birthDate(LocalDate.of(1993, 12, 20))
                 .build();
-        log.info("Student data: [" + student.toString() + "].");
+        log.info("Student data: [" + student + "].");
 
         createStudentEnrollment.execute(student);
         log.info("Updated student data : [" + student + "].");
