@@ -1,7 +1,7 @@
 package org.poc.chain.of.responsibility.infra.database;
 
 import org.poc.chain.of.responsibility.core.domain.entities.Student;
-import org.poc.chain.of.responsibility.core.repositories.StudentRepository;
+import org.poc.chain.of.responsibility.core.domain.repositories.StudentRepository;
 import org.poc.chain.of.responsibility.core.domain.valueobjects.CPF;
 
 import java.util.List;

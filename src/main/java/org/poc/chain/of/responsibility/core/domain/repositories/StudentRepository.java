@@ -1,4 +1,4 @@
-package org.poc.chain.of.responsibility.core.repositories;
+package org.poc.chain.of.responsibility.core.domain.repositories;
 
 import org.poc.chain.of.responsibility.core.domain.entities.Student;
 import org.poc.chain.of.responsibility.core.domain.valueobjects.CPF;

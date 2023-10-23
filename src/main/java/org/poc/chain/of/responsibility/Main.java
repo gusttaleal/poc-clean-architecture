@@ -1,7 +1,7 @@
 package org.poc.chain.of.responsibility;
 
 import org.poc.chain.of.responsibility.core.domain.entities.Student;
-import org.poc.chain.of.responsibility.core.exceptions.ErrorWhenCipherPassword;
+import org.poc.chain.of.responsibility.core.domain.exceptions.ErrorWhenCipherPassword;
 import org.poc.chain.of.responsibility.core.usecases.CreateStudentEnrollment;
 import org.poc.chain.of.responsibility.core.usecases.CreateStudentPassword;
 import org.poc.chain.of.responsibility.core.usecases.PersistStudentOnDatabase;
